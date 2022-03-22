@@ -1,17 +1,22 @@
-$include <humppila>
-$include <forssa>
-$include <tampere>
+%%%%%%%%PSEUDO%%%%%%%%%%%
+
+#include "humppila"
+ 
+#include "forssa"
+ 
+#include "tampere"
+ 
  
 void setupFunc()
-  {
+{
     me = new humppilaJäbä();
     me.name = Leevi;
     timer thougthDog = new timer(1000);
     thoughtDog.enable();
-  }
+}
 
 void main()
-  {
+{
      me.wakeUp();
      me.hunger = checkHunger()
      if(hunger > 50 && day.time = morning)
@@ -23,7 +28,6 @@ void main()
       me.actionToRun = goToWork();
     if(day.weekendQuery())
       me.actionToRun = NOYB();
-  
   }
   
   ISR_internalClock(thoughtDogOverflow)
