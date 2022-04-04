@@ -1,37 +1,23 @@
-%%%%%%%%PSEUDO%%%%%%%%%%%
+sudo apt install vim-gui-common
+sudo apt install vim-runtime
+mkdir -p ~/.vim/pack/vendor/start
+git clone --depth 1 \ https://github.com/preservim/nerdtree.git \ ~/.vim/pack/vendor/start/nerdtree
+git clone --depth 1 \ https://github.com/PhilRunninger/nerdtree-buffer-ops.git \ ~/.vim/pack/vendor/start/nerdtree/nerdtree_plugin
+git clone --depth 1 \ https://github.com/scrooloose/nerdtree-project-plugin.git \ ~/.vim/pack/vendor/start/nerdtree/nerdtree_plugin
+git clone --depth 1 \ https://github.com/tpope/vim-commentary.git \ ~/.vim/pack/vendor/start/commentary
 
-#include "humppila"
- 
-#include "forssa"
- 
-#include "tampere"
- 
- 
-void setupFunc()
-{
-    me = new humppilaJäbä();
-    me.name = Leevi;
-    timer thougthDog = new timer(1000);
-    thoughtDog.enable();
-}
 
-void main()
-{
-     me.wakeUp();
-     me.hunger = checkHunger()
-     if(hunger > 50 && day.time = morning)
-      me.actionToRun = eat(foodType.breakfast)
-     else if(hunger > 50)
-      me.actionToRun = eat(something);
-     
-    if(!day.weekendQuery())
-      me.actionToRun = goToWork();
-    if(day.weekendQuery())
-      me.actionToRun = NOYB();
-  }
-  
-  ISR_internalClock(thoughtDogOverflow)
-  {
-    if(!me.taskList.Empty)
-      exeucuteAction();
-  }
+.vimrc:
+
+set nocompatible
+filetype on
+filetype plugin on
+filetype indent on
+set number
+
+syntax on
+
+nnoremap ä :NERDTreeToggle
+nnoremap ö :NERDTree
+
+:hi Normal ctermfg=Red ctermbg=Black
