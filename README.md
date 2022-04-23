@@ -4,13 +4,15 @@ sudo apt install vim-runtime
 
 mkdir -p ~/.vim/pack/vendor/start
 
-git clone --depth 1 \ https://github.com/preservim/nerdtree.git \ ~/.vim/pack/vendor/start/nerdtree
+git clone --depth 1 https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
 
-git clone --depth 1 \ https://github.com/PhilRunninger/nerdtree-buffer-ops.git \ ~/.vim/pack/vendor/start/nerdtree/nerdtree_plugin
+git clone --depth 1 https://github.com/PhilRunninger/nerdtree-buffer-ops.git ~/.vim/pack/vendor/start/nerdtree/nerdtree_plugin
 
-git clone --depth 1 \ https://github.com/scrooloose/nerdtree-project-plugin.git \ ~/.vim/pack/vendor/start/nerdtree/nerdtree_plugin
+git clone --depth 1 https://github.com/scrooloose/nerdtree-project-plugin.git ~/.vim/pack/vendor/start/nerdtree/nerdtree_plugin
 
-git clone --depth 1 \ https://github.com/tpope/vim-commentary.git \ ~/.vim/pack/vendor/start/commentary
+git clone --depth 1 https://github.com/tpope/vim-commentary.git ~/.vim/pack/vendor/start/commentary/
+
+git clone --depth 1 https://github.com/jiangmiao/auto-pairs.git ~/.vim/pack/vendor/start/autopair/
 
 
 
