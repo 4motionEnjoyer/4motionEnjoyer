@@ -39,9 +39,12 @@ nnoremap ö :NERDTree
 :hi Normal ctermfg=Red ctermbg=Black
 
 
+
+
+
 .config/tickrs/config.yaml:
 
----
+
 #/ List of ticker symbols to start app with
 symbols:
   - NOKIA.HE
